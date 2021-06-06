@@ -1,0 +1,11 @@
+.card{
+  text-align: center;
+  align-items:center;
+}
+h1{
+  margin: 10px;
+}
+p{
+  width: 40%;
+  text-align: left;
+}

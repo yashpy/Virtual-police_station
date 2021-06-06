@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Register your complaint</title>
+    <style media="screen">
+      h1{
+        text-align: center;
+        margin: 30px;
+      }
+        .registerform{
+            margin-top: 3%;
+            width:50vw;
+            max-width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-group{
+            margin: 2vw;
+        }
+        .btn{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .btn:hover{
+          border-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Register a Complaint</h1>
+    <div class="card registerform">
+        <form action="storecomplaint.php" method="POST">
+          <div class="form-group">
+            <label for="inputName">Name of person against whome you want to complaint(Type 'Unknown if name is not known')</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="inputAge">Age of that person(0 if unknown)</label>
+            <input type="number" class="form-control" id="inputAge" placeholder="Enter Age" name="age" required>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Your Address</label>
+            <textarea class="form-control" id="inputAddress" rows="3" placeholder="Enter Address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="inputIncDT">Date & Time of Incidence</label>
+            <input type="datetime-local" class="form-control" id="inputIncDT" placeholder="Enter Age" name="incDT" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inputComplaint">Select Complaint Type</label>
+            <select class="form-control" id="inputComplaint" name="typeComplaint">
+              <option>Attempt to Murder</option>
+              <option>Theft</option>
+              <option>Domestic Violence</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color:#333">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>

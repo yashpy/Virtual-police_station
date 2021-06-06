@@ -1,0 +1,32 @@
+.navbar{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0;
+}
+center{
+  margin-top: 200px;
+}
+.navbar a:hover{
+  text-decoration: none;
+}
+
+.row .btn {
+  width: 300px;
+}
+li{
+  margin: 0 15px;
+}
+.row a{
+  display: block;
+  margin: 30px;
+  width: 300px;
+}
+.row img{
+  position: relative;
+  top: -80px;
+  width: 25rem;
+  height: 25rem;
+}
+.col-lg-6{
+  padding: 0;
+}

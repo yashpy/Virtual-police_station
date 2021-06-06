@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FIR Status</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/icons/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style media="screen">
+		.form_container{
+			width: 45%;
+			margin-right:  auto;
+			margin-left:  auto;
+			border: solid black;
+			border-radius: 20px;
+			padding: 30px;
+		}
+		.container{
+			height: 700px;
+			width: 100%;
+			padding-top: 15rem;
+		}
+		span{
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+		.input_field{
+				margin: 20px;
+				margin-left: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="entire_page">
+		<div class="container">
+			<div class="form_container">
+				<form class="login_form" method="POST" action="firstatus.php">
+					<span class="title">
+						Check FIR Status
+					</span>
+
+
+					<div class="input_field">
+						<label for="fir_no">Enter fir no.</label>
+						<input class="inp form-control" type="text" name="fir_no" >
+					</div>
+
+					<div class="form-btn">
+						<button type="submit" class="btn btn-primary">
+							Check!
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
